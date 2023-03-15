@@ -1,0 +1,14 @@
+.card-container {
+    max-width: 1000px; /* or any other value that fits your layout */
+  }
+  
+  @media (min-width: 992px) {
+    .card-container {
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      flex-basis: 20%; /* set the width of each card to 20% */
+    }
+  }
+  
