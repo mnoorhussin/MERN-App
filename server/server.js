@@ -18,6 +18,11 @@ app.get("/employees", async (req, res) => {
   res.json(employees);
 });
 
+app.post("/createemployees", async (req, res) => {
+  const newEmployee = new EmployeesModel(req.body);
+  await newEmployee.save();
+});
+
 app.listen("3001", () => {
   console.log("server works");
 });
