@@ -2,7 +2,6 @@ import Axios from "axios";
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Container, Button } from "react-bootstrap";
 
 export default function App() {
   const [employees, setEmployees] = useState([]);
@@ -64,9 +63,9 @@ export default function App() {
             />
           </div>
           <div className="col-md-1">
-            <Button className="btn btn-primary" onClick={createEmployee}>
+            <button className="btn btn-primary" onClick={createEmployee}>
               Create
-            </Button>
+            </button>
           </div>
         </div>
       </div>
